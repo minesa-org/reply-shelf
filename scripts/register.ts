@@ -1,4 +1,8 @@
 import { MiniInteraction } from "@minesa-org/mini-interaction";
+import dotenv from "dotenv";
+
+process.env.DOTENV_CONFIG_QUIET = "true";
+dotenv.config();
 
 const mini = new MiniInteraction({
 	applicationId: process.env.DISCORD_APPLICATION_ID!,

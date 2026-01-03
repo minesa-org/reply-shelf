@@ -1,6 +1,6 @@
 import { MiniDatabase } from "@minesa-org/mini-interaction";
 import { mini } from "./interactions.js";
-import { updateDiscordMetadata } from "../src/utils/database.js";
+import { updateDiscordMetadata } from "../src/utils/db.js";
 
 const database = MiniDatabase.fromEnv();
 const failedPage = mini.failedOAuthPage("public/pages/failed.html");
